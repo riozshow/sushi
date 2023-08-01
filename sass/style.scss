@@ -1,0 +1,19 @@
+
+/* Global */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
