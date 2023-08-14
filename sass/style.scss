@@ -1,4 +1,10 @@
 
+/* Variables */
+
+$bg-gradient: linear-gradient(45deg, #30384b, #343e55);
+
+$color-text-1: #cce0fd;
+
 /* Global */
 
 *,
@@ -16,4 +22,86 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
+  background: $bg-gradient;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+i {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: $color-text-1;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.i{
+  &[class$='-xs'] {
+    font-size: 12px;
+    width: 12px;
+    height: 12px;
+  }
+  &[class$='-sm'] {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+  }
+  &[class$='-md'] {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+  }
+  &[class$='-lg'] {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+  &[class$='-xl'] {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.container {
+  max-width: 1180px;
+}
+
+ul {
+  li {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+  }
+}
+
+// Nav //
+
+nav {
+
 }
